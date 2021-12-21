@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FileSend</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./copy.js"></script>
+    <title>File Share</title>
 </head>
 <body>
-    <h1>File Transfer System</h1>
+    <h1 id='title'>File Share</h1>
+    <div id="title-2"> 
+        Server Running at <span id='ip'>http://<%= locals.ip %>:3000</span>
+        <button onclick="copyText()">Copy</button>
+    </div>
     <a href="/downloads">Downloads</a>
     <a href="/uploads">Uploads</a>
     <%= locals.msg %> 

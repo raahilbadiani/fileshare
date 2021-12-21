@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Uploads</title>
 </head>
 <body>
-    <h1>Uploads</h1>
-    <form action="/uploads" method="post" id="upload-form" enctype="multipart/form-data" multiple>
-        <input type="file" name="upload" id='uploaded-file'><br/>
-        <input type="submit" value="submit">
+    <h1 id='title'>Uploads</h1>
+    <div>
+        <a href="../">Home</a>
+    </div>
+    <form action="/uploads" method="post" id="upload-form" enctype="multipart/form-data">
+        <div class=buttons>
+            <input type="file" name="upload" id='uploaded-file' multiple="multiple"><br/>
+            <input type="submit" value="submit" >
+        </div>
     </form>
 </body>
 </html>
